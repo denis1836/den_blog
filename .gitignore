@@ -1,0 +1,37 @@
+# system
+.DS_Store
+Thumbs.db
+*.log
+
+# rust files
+/target/
+
+# secrets
+.env
+.env.*
+!.env.example
+
+# npm dependecies
+**/node_modules/
+
+# compilation result
+/dist/
+
+# npm/vite logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# temp vite files
+.vite/
+.parcel-cache/
+
+# ide files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
