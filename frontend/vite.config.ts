@@ -1,10 +1,14 @@
 import { defineConfig } from 'vite';
-import { resolve } from 'path';
 
 export default defineConfig({
-  root: '.',
-  build: {
-    outDir: '../dist',
-    emptyOutDir: true,
-  }
+    root: '.',
+    server: {
+        proxy: {
+            '/api': 'http://127.0.0.1:3000'
+        },
+    },
+    build: {
+        outDir: '../dist',
+        emptyOutDir: true,
+    },
 });
